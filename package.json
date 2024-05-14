@@ -1,0 +1,25 @@
+{
+  "name": "sharp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@img/sharp-win32-x64": "^0.33.3",
+    "chalk": "^5.3.0",
+    "filesize": "^10.1.2",
+    "fs": "0.0.1-security",
+    "glob": "^10.3.15",
+    "sharp": "^0.33.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.2",
+    "source-map-support": "^0.5.21"
+  }
+}
