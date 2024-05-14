@@ -21,3 +21,11 @@ node ./scripts/sharp/dist/bundle.js [dir]
 ```
 node ./scripts/sharp/dist/bundle.js ./assets
 ```
+
+## 输出
+
+压缩后输出到 dir compressed 文件夹下
+
+## 注意
+
+默认 quality 80
