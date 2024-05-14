@@ -54,7 +54,13 @@ async function compressImage(image) {
       newName = `${compressedDir}/${imageName}-${random}.${imageExt}`;
     }
 
-    await sharp(image).resize().jpeg({ quality: 80 }).toFile(newName);
+    if (imageExt === "webp") {
+      await sharp(image).resize().webp({ quality: 80 }).toFile(newName);
+    } else if (imageExt === "png") {
+      await sharp(image).resize().png({ quality: 80 }).toFile(newName);
+    } else if (imageExt === "jpg" || imageExt === "jpeg") {
+      await sharp(image).resize().jpeg({ quality: 80 }).toFile(newName);
+    }
 
     const { size: newSize } = fs.statSync(newName);
 
